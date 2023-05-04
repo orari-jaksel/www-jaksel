@@ -27,5 +27,9 @@ body {
 }
 
 main-container {
-  @apply container flex flex-col items-center mx-auto max-w-screen-lg
+  @apply container flex flex-col items-center mx-auto max-w-screen-lg justify-center
+}
+
+main-header-text {
+  @apply text-slate-100 text-center md:text-left
 }
