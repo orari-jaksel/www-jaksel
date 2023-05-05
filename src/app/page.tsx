@@ -7,7 +7,11 @@ import { mdiNewspaperVariantOutline,
   mdiSchool, 
   mdiHomeFlood, 
   mdiCardAccountDetailsOutline,
-  mdiInformationOutline 
+  mdiInformationOutline,
+  mdiInstagram,
+  mdiWhatsapp,
+  mdiEmailOutline,
+  mdiFacebook
 } from '@mdi/js';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,7 +32,7 @@ export default function Home() {
             <p className='text-slate-100 text-center md:text-left text-slate-100 text-2xl md:text-6xl'>Lokal Jakarta Selatan</p>
           </div>
         </div>
-
+        
         <div className="bg-gray-200/50 rounded-lg mt-8 grid grid-cols-3 gap-4 md:gap-8 p-4 md:p-8">
           <div className="main-menu-item">
             <Icon path={mdiHeadset} size={2} />
@@ -54,6 +58,18 @@ export default function Home() {
             <Icon path={mdiInformationOutline} size={2} />
             <p className="main-menu-item-text">About Us</p>
           </div>
+        </div>
+        
+        <div className="flex mt-8 p-4 md:p-8">
+          <a href="https://instagram.com/orarijaksel">
+            <Icon className="main-social-icon" path={mdiInstagram} size={1.5} color="white" />
+          </a>
+          <a href="https://www.facebook.com/groups/orarijaksel">
+          <Icon className="main-social-icon" path={mdiFacebook} size={1.5} color="white" />
+          </a>
+          <a href="https://wa.me/6281278910534">
+            <Icon className="main-social-icon" path={mdiWhatsapp} size={1.5} color="white" />
+          </a>
         </div>
       </div>
     </div>

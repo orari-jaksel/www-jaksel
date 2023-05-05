@@ -27,7 +27,7 @@ body {
 }
 
 .main-container {
-  @apply container flex flex-col items-center mx-auto max-w-screen-lg justify-center
+  @apply container flex flex-col items-center mx-auto max-w-screen-lg justify-center my-4
 }
 
 .main-header-text {
@@ -40,4 +40,8 @@ body {
 
 .main-menu-item-text {
   @apply text-sm md:text-lg text-center
+}
+
+.main-social-icon {
+  @apply mx-4
 }
