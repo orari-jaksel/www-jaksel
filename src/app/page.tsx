@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-csjs-building bg-no-repeat bg-cover bg-center">
+    <div className="flex items-center justify-center min-h-screen bg-csjs-tower md:bg-csjs-building bg-no-repeat bg-cover bg-center">
       <div className='main-container'>
         <div className='flex flex-col md:flex-row items-center'>
           <Image src={ LogoJaksel } 
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div className="main-menu-item">
             <Icon path={mdiHomeFlood} size={2} />
-            <p className="main-menu-item-text">ORARI Peduli</p>
+            <p className="main-menu-item-text">Jaksel Peduli</p>
           </div>
           <div className="main-menu-item">
             <Icon path={mdiCardAccountDetailsOutline} size={2} />

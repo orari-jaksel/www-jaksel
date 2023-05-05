@@ -12,6 +12,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'csjs-building': "url('/image/bg-seklok.jpg')",
+        'csjs-tower': "url('/image/bg-jaksel-with-tower.jpg')",
       },
     },
   },
