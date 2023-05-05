@@ -26,10 +26,18 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-main-container {
+.main-container {
   @apply container flex flex-col items-center mx-auto max-w-screen-lg justify-center
 }
 
-main-header-text {
+.main-header-text {
   @apply text-slate-100 text-center md:text-left
+}
+
+.main-menu-item {
+  @apply flex flex-col justify-center items-center
+}
+
+.main-menu-item-text {
+  @apply text-sm md:text-lg
 }
