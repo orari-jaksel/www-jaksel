@@ -24,8 +24,8 @@ export default function Home() {
             50vw"
           />
           <div className="mx-4 md:mx-8 mt-4 md:mt-0">
-            <p className='text-slate-100 text-center md:text-left text-slate-100 text-xs md:text-4xl'>Organisasi Amatir Radio Indonesia</p>
-            <p className='text-slate-100 text-center md:text-left text-slate-100 text-xl md:text-6xl'>Lokal Jakarta Selatan</p>
+            <p className='text-slate-100 text-center md:text-left text-slate-100 text-md md:text-4xl'>Organisasi Amatir Radio Indonesia</p>
+            <p className='text-slate-100 text-center md:text-left text-slate-100 text-2xl md:text-6xl'>Lokal Jakarta Selatan</p>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div className="main-menu-item">
             <Icon path={mdiHomeFlood} size={2} />
-            <p className="main-menu-item-text">CORE</p>
+            <p className="main-menu-item-text">ORARI Peduli</p>
           </div>
           <div className="main-menu-item">
             <Icon path={mdiCardAccountDetailsOutline} size={2} />

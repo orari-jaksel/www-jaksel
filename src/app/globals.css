@@ -35,9 +35,9 @@ body {
 }
 
 .main-menu-item {
-  @apply flex flex-col justify-center items-center
+  @apply flex flex-col justify-start items-center
 }
 
 .main-menu-item-text {
-  @apply text-sm md:text-lg
+  @apply text-sm md:text-lg text-center
 }
