@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import Icon from '@mdi/react';
+import Link from 'next/link';
 import { mdiNewspaperVariantOutline, 
   mdiHeadset, 
   mdiSchool, 
@@ -39,10 +40,10 @@ export default function Home() {
           <Icon path={mdiCardAccountDetailsOutline} size={2} />
           <p className="main-menu-item-text">Membership</p>
         </div>
-        <div className="main-menu-item">
-          <Icon path={mdiInformationOutline} size={2} />
-          <p className="main-menu-item-text">About Us</p>
-        </div>
+        <Link href='/about' className="main-menu-item">
+            <Icon path={mdiInformationOutline} size={2} />
+            <p className="main-menu-item-text">About Us</p>
+        </Link>
       </div>
       
       <Footer />
