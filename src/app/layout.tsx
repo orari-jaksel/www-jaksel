@@ -15,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex items-center justify-center min-h-screen bg-csjs-tower md:bg-csjs-building bg-no-repeat bg-cover bg-center">
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
