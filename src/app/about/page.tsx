@@ -24,7 +24,7 @@ export default function Home() {
     <div className='main-container'>
       <Header />
       
-      <div className="bg-gray-200/50 rounded-lg mt-8 grid grid-cols-3 gap-4 md:gap-8 p-4 md:p-8">
+      <div className="content-area grid grid-cols-3">
         <div className='col-span-3 mb-8 flex justify-left items-center relative'>
             <Link className='mr-auto ml-0 absolute' href='/'>
                 <Icon path={mdiArrowLeft} size={1.5} />
@@ -35,10 +35,14 @@ export default function Home() {
           <Icon path={mdiHistory} size={2} />
           <p className="main-menu-item-text">History</p>
         </div>
+        <Link href="/about/pengurus" className="main-menu-item">
+          <Icon path={mdiAccountMultipleOutline} size={2} />
+          <p className="main-menu-item-text">Pengurus</p>
+        </Link>
         <div className="main-menu-item">
           <Icon path={mdiAccountMultipleOutline} size={2} />
-          <p className="main-menu-item-text">Pengurus & DPP</p>
-        </div>
+          <p className="main-menu-item-text">DPP</p>
+        </div>        
         <div className="main-menu-item">
           <Icon path={ mdiMapMarker } size={2} />
           <p className="main-menu-item-text">Location</p>
