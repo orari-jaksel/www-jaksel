@@ -7,6 +7,7 @@ import { mdiNewspaperVariantOutline,
   mdiHomeFlood, 
   mdiCardAccountDetailsOutline,
   mdiInformationOutline,
+  mdiCalendarBlankOutline,
 } from '@mdi/js';
 
 import Header from '../components/header'
@@ -19,26 +20,22 @@ export default function Home() {
     <div className='main-container'>
       <Header />
       
-      <div className="bg-gray-200/50 rounded-lg mt-8 grid grid-cols-3 gap-4 md:gap-8 p-4 md:p-8">
+      <div className="content-area grid grid-cols-3">
         <div className="main-menu-item">
-          <Icon path={mdiHeadset} size={2} />
-          <p className="main-menu-item-text">Contest</p>
+          <Icon path={mdiCalendarBlankOutline} size={2} />
+          <p className="main-menu-item-text">Activities</p>
         </div>
         <div className="main-menu-item">
           <Icon path={mdiNewspaperVariantOutline} size={2} />
           <p className="main-menu-item-text">News</p>
         </div>
         <div className="main-menu-item">
-          <Icon path={ mdiSchool } size={2} />
-          <p className="main-menu-item-text">Education</p>
+          <Icon path={mdiCardAccountDetailsOutline} size={2} />
+          <p className="main-menu-item-text">Membership</p>
         </div>
         <div className="main-menu-item">
           <Icon path={mdiHomeFlood} size={2} />
           <p className="main-menu-item-text">Jaksel Peduli</p>
-        </div>
-        <div className="main-menu-item">
-          <Icon path={mdiCardAccountDetailsOutline} size={2} />
-          <p className="main-menu-item-text">Membership</p>
         </div>
         <Link href='/about' className="main-menu-item">
             <Icon path={mdiInformationOutline} size={2} />
