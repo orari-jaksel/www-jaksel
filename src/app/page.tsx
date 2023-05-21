@@ -8,6 +8,7 @@ import { mdiNewspaperVariantOutline,
   mdiCardAccountDetailsOutline,
   mdiInformationOutline,
   mdiCalendarBlankOutline,
+  mdiDownloadBoxOutline
 } from '@mdi/js';
 
 import Header from '../components/header'
@@ -41,6 +42,10 @@ export default function Home() {
             <Icon path={mdiInformationOutline} size={2} />
             <p className="main-menu-item-text">About Us</p>
         </Link>
+        <div className="main-menu-item">
+          <Icon path={mdiDownloadBoxOutline} size={2} />
+          <p className="main-menu-item-text">Download</p>
+        </div>
       </div>
       
       <Footer />
