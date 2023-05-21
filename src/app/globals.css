@@ -47,7 +47,7 @@ body {
 }
 
 .content-area {
-  @apply bg-gray-200/70 rounded-lg mt-8 gap-4 md:gap-8 p-4 md:p-8
+  @apply bg-gray-200/70 rounded-lg mt-8 gap-4 md:gap-8 p-4 md:p-8 mx-4
 }
 
 #post-content h1 {

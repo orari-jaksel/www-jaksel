@@ -2,20 +2,20 @@ import { Inter } from 'next/font/google'
 import Icon from '@mdi/react';
 import Link from 'next/link'
 import { mdiNewspaperVariantOutline, 
-  mdiHistory,
-  mdiAccountMultipleOutline,
-  mdiMapMarker,
+  mdiHeadset, 
+  mdiSchool, 
+  mdiMicrophone,
   mdiArrowLeft,
-  mdiAccountSupervisorOutline
+  mdiBroadcast
 } from '@mdi/js';
 
-import Header from '../../components/header'
-import Footer from "../../components/sosmed-footer"
+import Header from '@/components/header'
+import Footer from "@/components/sosmed-footer"
 import AppIcon from '@/components/app-icon';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function ActivitiesPage() {
   return (
     <div className='main-container'>
       <Header />
@@ -25,14 +25,14 @@ export default function Home() {
             <Link className='mr-auto ml-0 absolute' href='/'>
                 <Icon path={mdiArrowLeft} size={1.5} />
             </Link>
-            <p className='text-2xl underline underline-offset-8 font-bold mx-auto'>About Us</p>
+            <p className='text-2xl underline underline-offset-8 font-bold mx-auto'>Activities</p>
         </div>
 
-        <AppIcon href="#" title="History" icon={ mdiHistory } />
-        <AppIcon href="/about/pengurus" title="Pengurus" icon={ mdiAccountMultipleOutline } />
-        <AppIcon href="#" title="DPP" icon={ mdiAccountSupervisorOutline } />
-        <AppIcon href="#" title="Location" icon={ mdiMapMarker } />
-
+        <AppIcon href="#" title="Net Lokal" icon={ mdiBroadcast } />
+        <AppIcon href="#" title="Contest" icon={ mdiHeadset } />
+        <AppIcon href="#" title="Special Event Station" icon={ mdiMicrophone } />
+        <AppIcon href="#" title="Education" icon={ mdiSchool } />
+    
       </div>
       
       <Footer />
