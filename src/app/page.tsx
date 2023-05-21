@@ -8,10 +8,12 @@ import { mdiNewspaperVariantOutline,
   mdiCardAccountDetailsOutline,
   mdiInformationOutline,
   mdiCalendarBlankOutline,
+  mdiDownloadBoxOutline,
 } from '@mdi/js';
 
-import Header from '../components/header'
-import Footer from "../components/sosmed-footer"
+import Header from '@/components/header'
+import Footer from "@/components/sosmed-footer"
+import AppIcon from "@/components/app-icon"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,26 +23,12 @@ export default function Home() {
       <Header />
       
       <div className="content-area grid grid-cols-3">
-        <div className="main-menu-item">
-          <Icon path={mdiCalendarBlankOutline} size={2} />
-          <p className="main-menu-item-text">Activities</p>
-        </div>
-        <div className="main-menu-item">
-          <Icon path={mdiNewspaperVariantOutline} size={2} />
-          <p className="main-menu-item-text">News</p>
-        </div>
-        <div className="main-menu-item">
-          <Icon path={mdiCardAccountDetailsOutline} size={2} />
-          <p className="main-menu-item-text">Membership</p>
-        </div>
-        <div className="main-menu-item">
-          <Icon path={mdiHomeFlood} size={2} />
-          <p className="main-menu-item-text">Jaksel Peduli</p>
-        </div>
-        <Link href='/about' className="main-menu-item">
-            <Icon path={mdiInformationOutline} size={2} />
-            <p className="main-menu-item-text">About Us</p>
-        </Link>
+        <AppIcon href="/activities" title="Activities" icon={ mdiCalendarBlankOutline } />
+        <AppIcon href="#" title="News" icon={ mdiNewspaperVariantOutline } />
+        <AppIcon href="/membership" title="Membership" icon={ mdiCardAccountDetailsOutline } />
+        <AppIcon href="#" title="Jaksel Peduli" icon={ mdiHomeFlood } />
+        <AppIcon href="/about" title="About Us" icon={ mdiInformationOutline } />
+        <AppIcon href="/download" title="Download" icon={ mdiDownloadBoxOutline } />
       </div>
       
       <Footer />
