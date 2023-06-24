@@ -32,7 +32,7 @@ export default function MembershipPage() {
             </Link>
             <p className='text-2xl underline underline-offset-8 font-bold mx-auto'>Membership</p>
         </div>
-        <AppIcon href="#" title="Calon Anggota" icon={ mdiAbTesting } />
+        <AppIcon href="/membership/calon-anggota" title="Calon Anggota" icon={ mdiAbTesting } />
         <AppIcon href="#" title="Anggota Baru" icon={ mdiHumanGreeting } />
         <AppIcon href="#" title="Perpanjangan" icon={ mdiAutorenew } />
         <AppIcon href="#" title="Kenaikan Tingkat" icon={ mdiArrowTopRightBoldOutline } />
